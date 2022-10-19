@@ -17,7 +17,7 @@ console.log(" ");
 
 //Question B. which candies have "M&M" as part of the name
 let mm= products.filter(p => p.product.includes("M&M"));
-mm.forEach(p => console.log("M&Ms': ",p));
+mm.forEach(p => conoles.log("M&Ms': ",p));
 
 console.log(" ");
 
