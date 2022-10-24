@@ -39,7 +39,7 @@ let bobs = academyMembers.filter(m => m.name.startsWith("Bob"));
 bobs.forEach(m => console.log("Bobs: ", m.name));
 
 console.log(" ");
-console.log(" Bonus: which academy winners have been in films that starts with an A");
+console.log("Harder: which academy winners have been in films that starts with an A");
 function startsWithA(title) {
     return title.startsWith("A");
 }
