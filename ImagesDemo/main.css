@@ -1,0 +1,5 @@
+.roundedImg {
+    border-radius: 100%;
+    object-fit: contain;
+    width: 20%;
+}

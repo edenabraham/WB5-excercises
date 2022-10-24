@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<script>
+    const data = [
+        {
+            imagePath: "freeflower.jpg",
+            description: "Orange flower"
+        },
+        {
+            imagePath: "lotus flower.jpg",
+            description: "A Lotus flower"
+        },
+        
+    ];
+
+    window.onload = () => {
+        const images = document.getElementsByTagName("img");
+        const paragraphs = document.getElementsByTagName("p");
+        
+        for (i = 0; i < 3; i++) {
+        
+            image = images[i];
+            item = data[i];
+            p = paragraphs[i];
+            text =  item.description
+
+            image.src = item.imagePath;
+            image.setAttribute("alt", text);
+            p.innerHTML = text;
+            p.style.border = "1px solid black";
+        
+        }
+        
+    };
+</script>
+<body>
+    <div>
+        <img src="/ImagesDemo/images/orangeflowerr.jpg" >
+        <p>The Orange Flower</p>
+    </div>
+    <div>
+        <img src="/ImagesDemo/images/lotusFlowerBomb.jpg">
+        <p>The Lotus Flower</p>
+    </div>
+    
+    
+</body>
+</html>
